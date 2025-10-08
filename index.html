@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header d-flex flex-wrap justify-content-between border-bottom py-3 align-items-center">
+                <a href="#!" class="d-flex text-decoration-none font-weight-bold align-items-center">
+                    <img src="assets/logo.svg" alt="" width="64px">
+                    <span class="text-black ms-3 header-title">kalisdevt.github.io</span>
+                </a>
+                <ul class="nav nav-pills mt-5 mt-md-0">
+                    <li class="nav-item">
+                        <a href="#hypertexts" class="nav-link active">Гиперссылки</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#table-block" class="nav-link">Таблица</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#forma" class="nav-link">Форма</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="mt-4 mb-5">
+        <div class="container d-flex flex-column">
+            <div id="hypertexts" class="hypertexts order-1">
+                <h2 class="text-h2 font-weight-bold">Список гиперссылок</h2>
+                <ul class="hyperlinks">
+                    <li><a href="http://kubsu.ru">абсолютная гиперссылка на главную страницу сайта kubsu.ru</a></li>
+                    <li><a href="https://kubsu.ru">абсолютная на главную сайта kubsu.ru в протоколе https</a></li>
+                    <li><a href=""><img src="assets/image.jpg" alt="image" width="300px"></a></li>
+                    <li><a href="form.html">ссылка на внутреннюю страницу</a></li>
+                    <li><a href="/">ссылка на главную страницу</a></li>
+                    <li><a href="#fragment">ссылка на фрагмент текущей страницы</a></li>
+                    <li><a href="?name=Дмитрий&age=18&course=2">ссылка с тремя параметрами в URL</a></li>
+                    <li><a href="?id=004">ссылка с параметром id в url</a></li>
+                    <li><a href="./form.html">относительная ссылка на страницу в текущем каталоге</a></li>
+                    <li><a href="./about/first.html">относительная ссылка на страницу в каталоге about</a></li>
+                    <li><a href="../second.html">относительная ссылка на страницу уровнем выше текущего</a></li>
+                    <li><a href="../../third.html">относительная ссылка на страницу в каталоге двумя уровнями выше</a></li>
+                    <li><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi fugiat adipisci, totam pariatur sit minima deserunt <a href="#">consequuntur</a> id, eos ipsam est, consequatur ab perferendis reprehenderit asperiores. Dolorum accusantium modi iusto.</p></li>
+                    <li><a href="https://ru.wikipedia.org/wiki/Статья_(жанр_журналистики)#Информационная_статья">ссылка на фрагмент страницы стороннего сайта</a></li>
+                    <li><img src="assets/image.jpg" width="400px" usemap="#map"></li>
+                    <li><a href="">ссылка с пустым href</a></li>
+                    <li><a>ссылка без href</a></li>
+                    <li><a href="https://ya.ru" rel="nofollow">ссылка, по которой запрещен переход поисковикам</a></li>
+                    <li><no-index><a href="https://google.com">ссылка, которую запрещено индексировать поисковиками</a></no-index></li>
+                    <ol>
+                        <li><a href="https://pay.yandex.ru" title="Яндекс Пэй">Ссылка 1</a></li>
+                        <li><a href="https://google.com" title="Поисковик Гугл">Ссылка 2</a></li>
+                    </ol>
+                    <li><a href="ftp://admin:1234@google.com/index.doc">ссылка на файл с протоколом ftp</a></li>
+                </ul>
+            </div>
+
+            <div id="table-block" class="table-block order-md-2 mt-3">
+                <h2 class="text-h2 font-weight-bold">Таблица</h2>
+                <table class="table table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <td colspan="3">Level 1, 2 and 3</td>
+                            <td>Level 4</td>
+                            <td>Level 5</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="even">
+                            <td rowspan="6">System</td>
+                            <td rowspan="4">System Apps</td>
+                            <td rowspan="3">SystemEnv</td>
+                            <td>App Test</td>
+                            <td>Foo</td>
+                        </tr>
+                        <tr>
+                            <td>App Memory</td>
+                            <td>Foo</td>
+                        </tr>
+                        <tr class="even">
+                            <td>App Test</td>
+                            <td>Bar</td>
+                        </tr>
+                        <tr>
+                            <td>SystemEnv2</td>
+                            <td>App Test</td>
+                            <td>Bar</td>
+                        </tr>
+                        <tr class="even">
+                            <td rowspan="2">System Memory</td>
+                            <td rowspan="2">Memory Test</td>
+                            <td>Memory Func</td>
+                            <td>Foo</td>
+                        </tr>
+                        <tr>
+                            <td>Apes Test</td>
+                            <td>Foo</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="forma" class="forma order-3 mt-3">
+                <h2 class="text-h2 font-weight-bold">Форма</h2>
+                <form action="/">
+                    <label for="">
+                        ФИО
+                        <input name="fio" type="text" >
+                    </label>
+                    <label for="">
+                        Телефон
+                        <input name="phone" type="tel">
+                    </label>
+                    <label for="">
+                        Email
+                        <input name="email" type="email">
+                    </label>
+                    <label for="">
+                        Дата рождения
+                        <input name="date" type="date">
+                    </label>
+                    <label for="">
+                        M
+                        <input name="pol" type="radio" value="мужской">
+                    </label>
+                    <label for="">
+                        Ж
+                        <input name="pol" type="radio" value="женский">
+                    </label>
+                    <label for="">
+                        Любимый язык программирования
+                        <select name="lang[]" id="lang" multiple>
+                            <option value="pascal">Pascal</option>
+                            <option value="c">C</option>
+                            <option value="cpp">C++</option>
+                            <option value="javascript">JavaScript</option>
+                            <option value="php">PHP</option>
+                            <option value="python">Python</option>
+                            <option value="java">Java</option>
+                            <option value="haskel">Haskel</option>
+                            <option value="clojure">Clojure</option>
+                            <option value="prolog">Prolog</option>
+                            <option value="scala">Scala</option>
+                        </select>
+                    </label>
+                    <label for="">
+                        Биография
+                        <textarea name="biography" id="#textarea"></textarea>
+                    </label>
+                    <label for="">
+                        С контрактом ознакомлен
+                        <input name="accept" type="checkbox">
+                    </label>
+                    <button class="btn btn-primary" type="submit">Сохранить</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <map name="map">
+        <area shape="circle" coords="75,75,75" href="https://kubsu.ru">
+        <area shape="rect" coords="20,20,20,20" href="https://ya.ru" alt="">
+    </map>
+</body>
+</html>
