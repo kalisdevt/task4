@@ -11,6 +11,8 @@ label {
     margin: 10px 0;
 }
 
-.container {
+.container-wrap {
+    margin: 0 auto;
+    padding: 0 10px;
     max-width: 960px !important;
 }
