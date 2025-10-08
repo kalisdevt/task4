@@ -12,7 +12,7 @@ label {
 }
 
 .container-wrap {
-    margin: 0 auto;
-    padding: 0 10px;
+    margin: 0 auto !important;
+    padding: 0 10px !important;
     max-width: 960px !important;
 }
